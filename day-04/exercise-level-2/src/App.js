@@ -118,6 +118,24 @@ function App() {
     </section>
   );
 
+  
+  const colors = ["#518cef", "#3b10c4", "#9aede6", "#8ee763", "#a30dd0"];
+
+  const colorContainer = (
+    colors.map((color) => {
+      const divStyle = {
+        backgroundColor: color
+      }
+      return (<div className='color-container' style={divStyle}>{color}</div>)
+    })
+  )
+
+  const ColorWheel = () => (
+    <div className='color-wheel-container'>
+      { colorContainer }
+    </div>
+  )
+
 
   const Main = () => (
     <main style={mainStyles}>
@@ -137,6 +155,7 @@ function App() {
         <User />
         <FrontendTechs />
         <Newsletter />
+        <ColorWheel />
       </div>
     </main>
   )
@@ -154,7 +173,7 @@ function App() {
   return (
     <div className="App">
       <Header />  
-      <Main />
+      <Main />      
       <Footer />
     </div>
   );
