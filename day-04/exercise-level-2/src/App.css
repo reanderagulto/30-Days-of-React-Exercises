@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+  font-family: 'Oswald', sans-serif;
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.align-center{
+  text-align: center;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.profile-img{
+  border-radius: 50%;
+  width: 300px;
+}
+
+.section-wrapper{
+  padding: 30px;
+}
+
+.section-wrapper h3, 
+.section-wrapper h4{
+  text-align: center;
+  font-weight: 400;
+}
+
+.frontend-tech {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.frontend-tech img {
+  width: 130px;
+}
+
+.form-control-group {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.form-control {
+  height: 30px;
+  margin: 1em;
+  border-radius: 3px;
+  border: unset;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-control::placeholder {
+  padding: 5px;
+}
+
+.btn{
+  height: 45px;
+  background: none;
+  border-radius: 5px;
+  padding: 7px;
+  border: none;
+  width: 200px;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.btn.btn-error:hover{
+  cursor: pointer;
+  background-color: #761f1f;
+}
+
+.btn.btn-error {
+  background-color: #d54f4f;
+}
+
+ul.skills {
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: unset;
+}
+
+ul.skills li {
+  margin: 5px 5px;
+  background-color: #61dafb;
+  padding: 12px;
+  border-radius: 5px;
+  min-width: 55px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  transition: all 0.4s ease;
+}
+
+ul.skills li:hover{
+  cursor: pointer;
+  background-color: #06647e;
+  color: white;
+  
+}
+
+.author-info {
+  margin: 30px;
+}
