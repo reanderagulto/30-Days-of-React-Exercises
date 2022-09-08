@@ -144,3 +144,16 @@ ul.skills li:hover{
 .author-info {
   margin: 30px;
 }
+
+.color-wheel-container{
+  padding: 0 30px;
+}
+
+.color-container{
+  width: 100%;
+  padding: 20px 0;
+  margin: 2px 0;
+  text-align: center;
+  color: #FFF;
+  border-radius: 3px;
+}
